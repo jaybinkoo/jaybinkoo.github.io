@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="hexo,搭建博客,github pages,next" />
 
 
 
@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="环境配置：python3.6 ；win7  本文是参考了https://mp.weixin.qq.com/s/cQRG7Ix0nP4MptlaMqSWvA 。但是发现不能正确运行。所以笔者打算救活这只爬虫。1http://www.allitebooks.com/ 该网站提供了大量免费的编程方面的电子书，可以供大家练手。  爬虫思路1-获取书的页数2-获取书的分页3-获取书的下载链接4-下载5-加">
-<meta name="keywords" content="python,hexo,神器,软件">
+<meta name="description" content="环境配置：python3.6 ；win7  本文是参考了https://mp.weixin.qq.com/s/cQRG7Ix0nP4MptlaMqSWvA 。但是发现不能正确运行。所以笔者打算救活这只爬虫。1http://www.allitebooks.com/ 该网站提供了大量免费的编程方面的电子书，可以供大家练手。">
+<meta name="keywords" content="hexo,搭建博客,github pages,next">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【python3爬虫】利用python的单线程和多线程下载PDF电子书">
 <meta property="og:url" content="http://yoursite.com/2018/12/15/【python3爬虫】利用python的单线程和多线程下载PDF电子书-1/index.html">
 <meta property="og:site_name" content="python爱好者">
-<meta property="og:description" content="环境配置：python3.6 ；win7  本文是参考了https://mp.weixin.qq.com/s/cQRG7Ix0nP4MptlaMqSWvA 。但是发现不能正确运行。所以笔者打算救活这只爬虫。1http://www.allitebooks.com/ 该网站提供了大量免费的编程方面的电子书，可以供大家练手。  爬虫思路1-获取书的页数2-获取书的分页3-获取书的下载链接4-下载5-加">
+<meta property="og:description" content="环境配置：python3.6 ；win7  本文是参考了https://mp.weixin.qq.com/s/cQRG7Ix0nP4MptlaMqSWvA 。但是发现不能正确运行。所以笔者打算救活这只爬虫。1http://www.allitebooks.com/ 该网站提供了大量免费的编程方面的电子书，可以供大家练手。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-15T04:22:21.000Z">
+<meta property="og:updated_time" content="2018-12-16T09:52:36.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【python3爬虫】利用python的单线程和多线程下载PDF电子书">
-<meta name="twitter:description" content="环境配置：python3.6 ；win7  本文是参考了https://mp.weixin.qq.com/s/cQRG7Ix0nP4MptlaMqSWvA 。但是发现不能正确运行。所以笔者打算救活这只爬虫。1http://www.allitebooks.com/ 该网站提供了大量免费的编程方面的电子书，可以供大家练手。  爬虫思路1-获取书的页数2-获取书的分页3-获取书的下载链接4-下载5-加">
+<meta name="twitter:description" content="环境配置：python3.6 ；win7  本文是参考了https://mp.weixin.qq.com/s/cQRG7Ix0nP4MptlaMqSWvA 。但是发现不能正确运行。所以笔者打算救活这只爬虫。1http://www.allitebooks.com/ 该网站提供了大量免费的编程方面的电子书，可以供大家练手。">
 
 
 
@@ -359,6 +359,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python3爬虫-多线程/" itemprop="url" rel="index">
+                    <span itemprop="name">python3爬虫,多线程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -434,6 +456,7 @@
 </blockquote>
 <p>本文是参考了<code>https://mp.weixin.qq.com/s/cQRG7Ix0nP4MptlaMqSWvA</code> 。但是发现不能正确运行。所以笔者打算救活这只爬虫。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://www.allitebooks.com/</span><br></pre></td></tr></table></figure></p>
 <p>该网站提供了大量免费的编程方面的电子书，可以供大家练手。</p>
+<a id="more"></a>
 <hr>
 <h2 id="爬虫思路"><a href="#爬虫思路" class="headerlink" title="爬虫思路"></a>爬虫思路</h2><h3 id="1-获取书的页数"><a href="#1-获取书的页数" class="headerlink" title="1-获取书的页数"></a>1-获取书的页数</h3><h3 id="2-获取书的分页"><a href="#2-获取书的分页" class="headerlink" title="2-获取书的分页"></a>2-获取书的分页</h3><h3 id="3-获取书的下载链接"><a href="#3-获取书的下载链接" class="headerlink" title="3-获取书的下载链接"></a>3-获取书的下载链接</h3><h3 id="4-下载"><a href="#4-下载" class="headerlink" title="4-下载"></a>4-下载</h3><h3 id="5-加入多线程"><a href="#5-加入多线程" class="headerlink" title="5-加入多线程"></a>5-加入多线程</h3><hr>
 <h2 id="1-获取书的页数-，分析网址构造"><a href="#1-获取书的页数-，分析网址构造" class="headerlink" title="1-获取书的页数 ，分析网址构造"></a>1-获取书的页数 ，分析网址构造</h2><p>首页 ： <code>http://www.allitebooks.com/</code><br>第二页：<code>http://www.allitebooks.com/page/2/</code><br>第三页： <code>http://www.allitebooks.com/page/3/</code><br>最后一页：<code>http://www.allitebooks.com/page/780/</code><br>好明显我们已经发现规律了。 只有简单地构造一下<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">start_urls = [<span class="string">"http://www.allitebooks.com/"</span>]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">2</span>, <span class="number">781</span>):</span><br><span class="line">    start_urls.append(<span class="string">"http://www.allitebooks.com/"</span> + <span class="string">'page/%d/'</span> % i)</span><br><span class="line">print(start_urls)</span><br></pre></td></tr></table></figure></p>
@@ -523,6 +546,16 @@
 
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
+          
+            <a href="/tags/个人博客/" rel="tag"><i class="fa fa-tag"></i> 个人博客</a>
+          
+            <a href="/tags/github/" rel="tag"><i class="fa fa-tag"></i> github</a>
+          
+        </div>
       
 
       
@@ -629,7 +662,25 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>

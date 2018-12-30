@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="hexo,个人博客,github," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="python爱好者" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="keywords" content="hexo,个人博客,github">
+<meta property="og:type" content="article">
+<meta property="og:title" content="手把手教你用hexo在GitHub上搭建个人博客+域名绑定(超详细超多图)">
+<meta property="og:url" content="https://yoursite.com/2018/12/29/手把手教你用hexo在GitHub上搭建个人博客-域名绑定-超详细超多图/index.html">
+<meta property="og:site_name" content="python爱好者">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/z4ipv5TudGo9.jpg">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/FVnAuSHqtKQY.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/PUMIuoPkXBdL.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/qgLvQADfrhDg.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/SF0t7MfJPCtw.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/vVmvGMN9bDAq.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/3YcKHTESq53d.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/LSotedv14388.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/f0aIm8d0DXoz.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/6T5zWL7laNWF.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/7Ic9obblmwKa.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/rFbf5119SE4S.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/jqRj5cugzHV3.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/ajxRBXfwHCJn.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/93RUmfqcFilR.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/RV3kLdJDq880.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/tOPr0xaLWgqn.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/Q6HBbgUPLJvE.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/FGOFgAcuE0CD.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/20wmjbhcflS2.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/fTDjALFARgSl.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/I5kl5griNEgf.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/sYKtzf9iJrYb.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/uqhlxC1J1XAF.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/m2AapfCL2YDO.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/X6G4wlPzA1Lx.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/EzVnCRx11Rzu.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/hJhkr37jpweb.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/DWgPeOzlTV9J.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/X5W7LqDB9HyF.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/mAtORTB4tJ36.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/RFk5xxY3OT2e.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/1Dj6OsU2bPwy.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/ESBS6WNUzArs.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/cnrjqylerPYv.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/RFbvCJFziS6m.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/cvrImGP8fYCk.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/aNBvlbkpGhYU.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/tl29VeaotN3W.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/PTWpk9veqOdr.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/0kucpd5pUCE1.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/1dbfD4seVGvR.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/3bE0YLThcc7U.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/EVaDluoB1jIn.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/Ls6rkeHFk6c1.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/wjMtYgae2MOj.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/gc75UW2Xge33.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/jSLE6SrW7Gyo.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/TuRumsmH9XCW.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/WhsXPTUIEk4z.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/DUG89p1dJY2u.png">
+<meta property="og:image" content="http://image.billiongrand.cn/blog/20181229/jhpNigvX3xln.png">
+<meta property="og:updated_time" content="2018-12-29T12:57:18.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="手把手教你用hexo在GitHub上搭建个人博客+域名绑定(超详细超多图)">
+<meta name="twitter:image" content="http://image.billiongrand.cn/blog/20181229/z4ipv5TudGo9.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://yoursite.com/2018/12/29/手把手教你用hexo在GitHub上搭建个人博客-域名绑定-超详细超多图/"/>
+
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "4f578f18"
+    });
+  daovoice('update');
+  </script>
+
+  <title>手把手教你用hexo在GitHub上搭建个人博客+域名绑定(超详细超多图) | python爱好者</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">python爱好者</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Bright Future</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首&emsp;&emsp;页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归&emsp;&emsp;档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标&emsp;&emsp;签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分&emsp;&emsp;类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于博主
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-top">
+          <a href="/top/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-signal"></i> <br />
+            
+            最受欢迎
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-$sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            $sitemap
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            站内搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://yoursite.com/2018/12/29/手把手教你用hexo在GitHub上搭建个人博客-域名绑定-超详细超多图/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="爱好者">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://image.billiongrand.cn/blog/20181215/8aC2VOCIHaSp.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="python爱好者">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">手把手教你用hexo在GitHub上搭建个人博客+域名绑定(超详细超多图)</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-29T16:47:09+08:00">
+                2018-12-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo博客/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo博客</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/12/29/手把手教你用hexo在GitHub上搭建个人博客-域名绑定-超详细超多图/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/29/手把手教你用hexo在GitHub上搭建个人博客-域名绑定-超详细超多图/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/12/29/手把手教你用hexo在GitHub上搭建个人博客-域名绑定-超详细超多图/" class="leancloud_visitors" data-flag-title="手把手教你用hexo在GitHub上搭建个人博客+域名绑定(超详细超多图)">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">热度&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+                <span> °C </span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2.5k 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  9 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://image.billiongrand.cn/blog/20181229/z4ipv5TudGo9.jpg" alt="mark"><br><a id="more"></a></p>
+<blockquote>
+<p>环境是：win7 32位系统<br>参考的大佬的文章有<br><a href="http://www.makcyun.top/hexo01.html" target="_blank" rel="noopener">https://www.makcyun.top/hexo01.html</a><br><a href="https://www.cnblogs.com/fengxiongZz/p/7707219.html" target="_blank" rel="noopener">https://www.cnblogs.com/fengxiongZz/p/7707219.html</a><br><a href="https://www.zhyong.cn" target="_blank" rel="noopener">https://www.zhyong.cn</a></p>
+</blockquote>
+<p>刚花了1个小时在GitHub上搭建了自己的博客，参考了很多大神的教程。因为也是新手，搭建过程遇到各种坑。所以想记录下自己搭建的过程，也可以给新手小白们当个参考。如果有错误的地方，欢迎指出！</p>
+<blockquote>
+<p>Hexo + Github 搭建的个人博客： <a href="http://jaybin.top/" target="_blank" rel="noopener">http://jaybin.top/</a></p>
+</blockquote>
+<h2 id="什么是-Hexo"><a href="#什么是-Hexo" class="headerlink" title="什么是 Hexo"></a>什么是 Hexo</h2><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<h2 id="什么是-GitHub"><a href="#什么是-GitHub" class="headerlink" title="什么是 GitHub"></a>什么是 GitHub</h2><p>GitHub 是通过 Git 进行版本控制的软件源代码托管服务，由 GitHub 公司（曾称 Logical Awesome）的开发者 Chris Wanstrath、PJ Hyett 和 Tom Preston-Werner 使用 Ruby on Rails 编写而成。（维基百科）</p>
+<h2 id="一、查看win7是32还是64位"><a href="#一、查看win7是32还是64位" class="headerlink" title="一、查看win7是32还是64位?"></a>一、查看win7是32还是64位?</h2><blockquote>
+<p>不会查的同学，看这里。</p>
+</blockquote>
+<p><img src="http://image.billiongrand.cn/blog/20181229/FVnAuSHqtKQY.png" alt="mark"><br><img src="http://image.billiongrand.cn/blog/20181229/PUMIuoPkXBdL.png" alt="mark"></p>
+<h2 id="二、博客搭建的环境配置"><a href="#二、博客搭建的环境配置" class="headerlink" title="二、博客搭建的环境配置"></a>二、博客搭建的环境配置</h2><blockquote>
+<p>现在要下载2个软件：Git和Nodejs。（都是32位的）</p>
+</blockquote>
+<h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><h3 id="（1）官网下载：https-git-scm-com-download-win-选择好自己电脑的版本。我的是win7-32位"><a href="#（1）官网下载：https-git-scm-com-download-win-选择好自己电脑的版本。我的是win7-32位" class="headerlink" title="（1）官网下载：https://git-scm.com/download/win   选择好自己电脑的版本。我的是win7-32位"></a>（1）官网下载：<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">https://git-scm.com/download/win</a>   选择好自己电脑的版本。我的是<code>win7-32位</code></h3><p><img src="http://image.billiongrand.cn/blog/20181229/qgLvQADfrhDg.png" alt="mark"></p>
+<h3 id="（2）下载完成后，双击运行Git-2-20-1-32-bit-exe软件安装包"><a href="#（2）下载完成后，双击运行Git-2-20-1-32-bit-exe软件安装包" class="headerlink" title="（2）下载完成后，双击运行Git-2.20.1-32-bit.exe软件安装包"></a>（2）下载完成后，双击运行<code>Git-2.20.1-32-bit.exe</code>软件安装包</h3><p><img src="http://image.billiongrand.cn/blog/20181229/SF0t7MfJPCtw.png" alt="mark"></p>
+<h3 id="（3）一直点-Next，继续安装"><a href="#（3）一直点-Next，继续安装" class="headerlink" title="（3）一直点 Next，继续安装"></a>（3）一直点 <code>Next</code>，继续安装</h3><p><img src="http://image.billiongrand.cn/blog/20181229/vVmvGMN9bDAq.png" alt="mark"><br><img src="http://image.billiongrand.cn/blog/20181229/3YcKHTESq53d.png" alt="mark"><br><img src="http://image.billiongrand.cn/blog/20181229/LSotedv14388.png" alt="mark"><br><img src="http://image.billiongrand.cn/blog/20181229/f0aIm8d0DXoz.png" alt="mark"></p>
+<h3 id="（4）点击-Install"><a href="#（4）点击-Install" class="headerlink" title="（4）点击 Install"></a>（4）点击 <code>Install</code></h3><p><img src="http://image.billiongrand.cn/blog/20181229/6T5zWL7laNWF.png" alt="mark"></p>
+<h3 id="（5）去掉打钩，再点击finish-完成安装。"><a href="#（5）去掉打钩，再点击finish-完成安装。" class="headerlink" title="（5）去掉打钩，再点击finish  完成安装。"></a>（5）去掉打钩，再点击<code>finish</code>  完成安装。</h3><p><img src="http://image.billiongrand.cn/blog/20181229/7Ic9obblmwKa.png" alt="mark"></p>
+<h3 id="（6）键盘按ctrl-r打开-命令窗口-输入-cmd-，点击确定-。"><a href="#（6）键盘按ctrl-r打开-命令窗口-输入-cmd-，点击确定-。" class="headerlink" title="（6）键盘按ctrl + r打开 命令窗口, 输入 cmd ，点击确定 。"></a>（6）键盘按<code>ctrl</code> + <code>r</code>打开 命令窗口, 输入 <code>cmd</code> ，点击<code>确定</code> 。</h3><p><img src="http://image.billiongrand.cn/blog/20181229/rFbf5119SE4S.png" alt="mark"></p>
+<h3 id="（7）输入git-version，结果显示-Git-版本，安装成功。（这个命令窗口不用关掉，待会还要用）"><a href="#（7）输入git-version，结果显示-Git-版本，安装成功。（这个命令窗口不用关掉，待会还要用）" class="headerlink" title="（7）输入git --version，结果显示 Git 版本，安装成功。（这个命令窗口不用关掉，待会还要用）"></a>（7）输入<code>git --version</code>，结果显示 Git 版本，安装成功。<code>（这个命令窗口不用关掉，待会还要用）</code></h3><p><img src="http://image.billiongrand.cn/blog/20181229/jqRj5cugzHV3.png" alt="mark"><br>或者在桌面单击鼠标右键 看看是否有 <code>Git  Bash Here</code> ，都是表示安装成功。<br><img src="http://image.billiongrand.cn/blog/20181229/ajxRBXfwHCJn.png" alt="mark"></p>
+<h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><h3 id="（1）官网下载：https-nodejs-org-en-download"><a href="#（1）官网下载：https-nodejs-org-en-download" class="headerlink" title="（1）官网下载：https://nodejs.org/en/download/"></a>（1）官网下载：<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a></h3><p><img src="http://image.billiongrand.cn/blog/20181229/93RUmfqcFilR.png" alt="mark"></p>
+<h3 id="（2）下载完成后，双击运行-node-v8-11-3-x86-msi-软件安装包"><a href="#（2）下载完成后，双击运行-node-v8-11-3-x86-msi-软件安装包" class="headerlink" title="（2）下载完成后，双击运行 node-v8.11.3-x86.msi 软件安装包"></a>（2）下载完成后，双击运行 <code>node-v8.11.3-x86.msi</code> 软件安装包</h3><p>耐心等待出现 <code>Next</code> 按钮，然后点击<br><img src="http://image.billiongrand.cn/blog/20181229/RV3kLdJDq880.png" alt="mark"></p>
+<h3 id="（3）打钩，接受，再点击-Next"><a href="#（3）打钩，接受，再点击-Next" class="headerlink" title="（3）打钩，接受，再点击 Next ,"></a>（3）<code>打钩</code>，接受，再点击 <code>Next</code> ,</h3><p><img src="http://image.billiongrand.cn/blog/20181229/tOPr0xaLWgqn.png" alt="mark"></p>
+<h3 id="（4）一直Next"><a href="#（4）一直Next" class="headerlink" title="（4）一直Next"></a>（4）一直<code>Next</code></h3><p><img src="http://image.billiongrand.cn/blog/20181229/Q6HBbgUPLJvE.png" alt="mark"></p>
+<h3 id="（5）点击-install"><a href="#（5）点击-install" class="headerlink" title="（5）点击 install"></a>（5）点击 <code>install</code></h3><p><img src="http://image.billiongrand.cn/blog/20181229/FGOFgAcuE0CD.png" alt="mark"></p>
+<h3 id="（6）-点击-Finsh-，完成安装。"><a href="#（6）-点击-Finsh-，完成安装。" class="headerlink" title="（6） 点击 Finsh ，完成安装。"></a>（6） 点击 <code>Finsh</code> ，完成安装。</h3><p><img src="http://image.billiongrand.cn/blog/20181229/20wmjbhcflS2.png" alt="mark"></p>
+<h3 id="（7）打开刚才的命令窗口，输入-node-v-然后按-回车-。-再输入-npm-v-再按-回车"><a href="#（7）打开刚才的命令窗口，输入-node-v-然后按-回车-。-再输入-npm-v-再按-回车" class="headerlink" title="（7）打开刚才的命令窗口，输入 node -v ,  然后按 回车 。 再输入 npm -v ,再按 回车"></a>（7）打开刚才的命令窗口，输入 <code>node -v</code> ,  然后按 <code>回车</code> 。 再输入 <code>npm -v</code> ,再按 <code>回车</code></h3><p>可以看到版本信息，就表示安装成功了。<br><img src="http://image.billiongrand.cn/blog/20181229/fTDjALFARgSl.png" alt="mark"></p>
+<h3 id="至此，软件安装步骤完成。"><a href="#至此，软件安装步骤完成。" class="headerlink" title="至此，软件安装步骤完成。"></a>至此，软件安装步骤完成。</h3><h2 id="三、搭建-Hexo-博客框架"><a href="#三、搭建-Hexo-博客框架" class="headerlink" title="三、搭建 Hexo 博客框架"></a>三、搭建 Hexo 博客框架</h2><h3 id="（1）-安装-Hexo，"><a href="#（1）-安装-Hexo，" class="headerlink" title="（1） 安装 Hexo，"></a>（1） 安装 Hexo，</h3><p>在电脑中新建一个文件夹存放自己的博客,名字自己起。例如：D盘里面新建一个 <code>blog</code> 的文件夹<br>在文件夹内,鼠标右键点击，选择 <code>Git Bash Here</code>  。出现命令窗口.<br><img src="http://image.billiongrand.cn/blog/20181229/I5kl5griNEgf.png" alt="mark"></p>
+<h3 id="（2）输入命令：npm-install-g-hexo-cli-，按-回车-。"><a href="#（2）输入命令：npm-install-g-hexo-cli-，按-回车-。" class="headerlink" title="（2）输入命令：npm install -g hexo-cli ，按 回车 。"></a>（2）输入命令：<code>npm install -g hexo-cli</code> ，按 <code>回车</code> 。</h3><p><img src="http://image.billiongrand.cn/blog/20181229/sYKtzf9iJrYb.png" alt="mark"></p>
+<h3 id="（3）初始化-Hexo"><a href="#（3）初始化-Hexo" class="headerlink" title="（3）初始化 Hexo"></a>（3）初始化 Hexo</h3><p>在 <code>$</code> 后面输入 <code>hexo init hexo</code><br><img src="http://image.billiongrand.cn/blog/20181229/uqhlxC1J1XAF.png" alt="mark"></p>
+<p>完成后得到 hexo 文件夹，里面存放 Hexo 博客所有的文件，包括下面会讲到的主题文件。<br><img src="http://image.billiongrand.cn/blog/20181229/m2AapfCL2YDO.png" alt="mark"></p>
+<h3 id="（4）在Git-Bash-这个窗口继续执行以下代码：（无特别提示，以下代码基本都在-Git-Bash-命令窗口执行）"><a href="#（4）在Git-Bash-这个窗口继续执行以下代码：（无特别提示，以下代码基本都在-Git-Bash-命令窗口执行）" class="headerlink" title="（4）在Git Bash 这个窗口继续执行以下代码：（无特别提示，以下代码基本都在 Git Bash 命令窗口执行）"></a>（4）在Git Bash 这个窗口继续执行以下代码：（无特别提示，以下代码基本都在 Git Bash 命令窗口执行）</h3><p>4.1 输入 <code>cd hexo</code> 再按 <code>回车</code><br>4.2 输入 <code>npm install</code> 再按 <code>回车</code><br>4.3 输入 <code>hexo generate</code> 再按 <code>回车</code><br><img src="http://image.billiongrand.cn/blog/20181229/X6G4wlPzA1Lx.png" alt="mark"></p>
+<p>4.4 启动服务器：执行以下代码 ,输入 <code>hexo server</code> 再按 <code>回车</code> 可以看到服务器代码是 4000<br><img src="http://image.billiongrand.cn/blog/20181229/EzVnCRx11Rzu.png" alt="mark"><br>4.5 打开浏览器，地址栏输入<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> ，结果如下图，可以看到，初始化的 Hexo 博客搭建成功，可以访问。<br><img src="http://image.billiongrand.cn/blog/20181229/hJhkr37jpweb.png" alt="mark"></p>
+<p>你可以看到第一篇默认的博客：Hello World。但看起来很难看，后续会通过重新选择模板来对博客进行美化.<br>好了，现在我们先停止服务器，按<code>Ctrl + C</code> 。 【不要关闭这个窗口，后面还要用】<br><img src="http://image.billiongrand.cn/blog/20181229/DWgPeOzlTV9J.png" alt="mark"></p>
+<h2 id="把你的博客部署到Github-Pages上去"><a href="#把你的博客部署到Github-Pages上去" class="headerlink" title="把你的博客部署到Github Pages上去"></a>把你的博客部署到Github Pages上去</h2><h3 id="1、Github账号注册及配置"><a href="#1、Github账号注册及配置" class="headerlink" title="1、Github账号注册及配置"></a>1、Github账号注册及配置</h3><ul>
+<li>注册github帐号</li>
+<li>建立new repository</li>
+</ul>
+<p>如果你没有github帐号，请到官网注册一个，然后去邮箱进行验证；如果你有帐号则直接登录。<br>官网：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a>     点击 <code>sign up</code> .<br><img src="http://image.billiongrand.cn/blog/20181229/X5W7LqDB9HyF.png" alt="mark"><br>注册完后，登录进去。</p>
+<h3 id="2、新建一个仓库，仓库名为：jaybinkoo-github-io-，如下图所示"><a href="#2、新建一个仓库，仓库名为：jaybinkoo-github-io-，如下图所示" class="headerlink" title="2、新建一个仓库，仓库名为：jaybinkoo.github.io ，如下图所示"></a>2、新建一个仓库，仓库名为：jaybinkoo.github.io ，如下图所示</h3><p><img src="http://image.billiongrand.cn/blog/20181229/mAtORTB4tJ36.png" alt="mark"></p>
+<h3 id="3、只需填写-username-github-io-即可，然后点击-create-repositrory。-注意：username-github-io-的-username-要和-用户名-保持一致，不然后面会失败。以我的为例："><a href="#3、只需填写-username-github-io-即可，然后点击-create-repositrory。-注意：username-github-io-的-username-要和-用户名-保持一致，不然后面会失败。以我的为例：" class="headerlink" title="3、只需填写 username.github.io 即可，然后点击 create repositrory。 注意：username.github.io  的 username 要和 用户名 保持一致，不然后面会失败。以我的为例："></a>3、只需填写 <code>username.github.io</code> 即可，然后点击 <code>create repositrory</code>。 注意：<code>username.github.io</code>  的 <code>username</code> 要和 <code>用户名</code> 保持一致，不然后面会失败。以我的为例：</h3><p><img src="http://image.billiongrand.cn/blog/20181229/RFk5xxY3OT2e.png" alt="mark"></p>
+<h3 id="4、点击github主页右上角的-your-profile"><a href="#4、点击github主页右上角的-your-profile" class="headerlink" title="4、点击github主页右上角的 your profile"></a>4、点击github主页右上角的 <code>your profile</code></h3><p><img src="http://image.billiongrand.cn/blog/20181229/1Dj6OsU2bPwy.png" alt="mark"></p>
+<h3 id="5、找到新建立的-username-github-io-文件-点击打开，"><a href="#5、找到新建立的-username-github-io-文件-点击打开，" class="headerlink" title="5、找到新建立的 username.github.io 文件,点击打开，"></a>5、找到新建立的 <code>username.github.io</code> 文件,点击打开，</h3><p><img src="http://image.billiongrand.cn/blog/20181229/ESBS6WNUzArs.png" alt="mark"></p>
+<h3 id="6、点击-settings，"><a href="#6、点击-settings，" class="headerlink" title="6、点击 settings，"></a>6、点击 <code>settings</code>，</h3><p><img src="http://image.billiongrand.cn/blog/20181229/cnrjqylerPYv.png" alt="mark"></p>
+<h3 id="7、往下拉动鼠标到GitHub-Pages。"><a href="#7、往下拉动鼠标到GitHub-Pages。" class="headerlink" title="7、往下拉动鼠标到GitHub Pages。"></a>7、往下拉动鼠标到GitHub Pages。</h3><p><img src="http://image.billiongrand.cn/blog/20181229/RFbvCJFziS6m.png" alt="mark"><br>如果你看到上方出现以下警告：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GitHub Pages <span class="keyword">is</span> currently disabled. You must first add content to your repository before you can publish a   GitHub Pages site</span><br></pre></td></tr></table></figure></p>
+<p>不用管他，点击选择 <code>choose a theme</code>，随便选择一个，（之后我们要更改这些丑陋的模板），然后 <code>select theme</code> 保存就行了.</p>
+<h3 id="8、将Hexo与Github-page联系起来，设置Git的user-name和email（如果是第一次的话）"><a href="#8、将Hexo与Github-page联系起来，设置Git的user-name和email（如果是第一次的话）" class="headerlink" title="8、将Hexo与Github page联系起来，设置Git的user name和email（如果是第一次的话）"></a>8、将Hexo与Github page联系起来，设置Git的user name和email（如果是第一次的话）</h3><p> 配置 Git 个人信息：在 <code>D:\blog\hexo</code> 目录下，鼠标右键打开一个 Git Bash 窗口，输入下面的命令<br>8.1 <code>git config --global user.name &quot; GitHub 用户名 &quot;</code>  然后 <code>回车</code> 。【GitHub 用户名】：就是刚才你注册的用户名  例如我的<br>8.2 git config –global user.email “ GitHub 邮箱 “  然后 <code>回车</code>。【GitHub 邮箱】：就是刚才你注册的邮箱  例如我的<br><img src="http://image.billiongrand.cn/blog/20181229/cvrImGP8fYCk.png" alt="mark"></p>
+<h3 id="9、-生成-SSH-KEY，其实就是生成一个公钥和密钥，因为-GitHub-需要一个密钥才能与本地相连接。执行以下命令，并-连续按-3-次回车"><a href="#9、-生成-SSH-KEY，其实就是生成一个公钥和密钥，因为-GitHub-需要一个密钥才能与本地相连接。执行以下命令，并-连续按-3-次回车" class="headerlink" title="9、 生成 SSH KEY，其实就是生成一个公钥和密钥，因为 GitHub 需要一个密钥才能与本地相连接。执行以下命令，并 连续按 3 次回车"></a>9、 生成 SSH KEY，其实就是生成一个公钥和密钥，因为 GitHub 需要一个密钥才能与本地相连接。执行以下命令，并 <code>连续按 3 次回车</code></h3><p>生成密钥：|输入：  <code>ssh-keygen -t rsa -C &quot; 邮箱地址 &quot;</code>    例如我的：<code>ssh-keygen -t rsa -C &quot; jaybin@aliyun.com &quot;</code><br><img src="http://image.billiongrand.cn/blog/20181229/aNBvlbkpGhYU.png" alt="mark"></p>
+<h3 id="10、-SSH-KEY-生成之后-得到了两个文件：id-rsa-和-id-rsa-pub（默认存储路径是：C-Users-Administrator-ssh）。打开我的电脑，在地址栏输入-C-Users-Administrator-ssh-然后回车，即可打开这个目录-。"><a href="#10、-SSH-KEY-生成之后-得到了两个文件：id-rsa-和-id-rsa-pub（默认存储路径是：C-Users-Administrator-ssh）。打开我的电脑，在地址栏输入-C-Users-Administrator-ssh-然后回车，即可打开这个目录-。" class="headerlink" title="10、 SSH KEY 生成之后,得到了两个文件：id_rsa 和 id_rsa.pub（默认存储路径是：C:\Users\Administrator.ssh）。打开我的电脑，在地址栏输入 C:\Users\Administrator\.ssh ,然后回车，即可打开这个目录 。"></a>10、 SSH KEY 生成之后,得到了两个文件：<code>id_rsa</code> 和 <code>id_rsa.pub</code>（默认存储路径是：C:\Users\Administrator.ssh）。打开我的电脑，在地址栏输入 <code>C:\Users\Administrator\.ssh</code> ,然后回车，即可打开这个目录 。</h3><p><img src="http://image.billiongrand.cn/blog/20181229/tl29VeaotN3W.png" alt="mark"></p>
+<h3 id="11、鼠标右键选择用记事本打开-id-rsa-pub-文件，复制全部内容，即复制密钥。"><a href="#11、鼠标右键选择用记事本打开-id-rsa-pub-文件，复制全部内容，即复制密钥。" class="headerlink" title="11、鼠标右键选择用记事本打开  id_rsa.pub  文件，复制全部内容，即复制密钥。"></a>11、鼠标右键选择用记事本打开  <code>id_rsa.pub</code>  文件，复制全部内容，即复制密钥。</h3><p><img src="http://image.billiongrand.cn/blog/20181229/PTWpk9veqOdr.png" alt="mark"></p>
+<h3 id="12、-打开-GitHub-，依次点击-头像-–-gt-Settings–-gt-SSH-and-GPG-keys-–-gt-Add-SSH-key，将复制的密钥粘贴到-key-输入框，最后点击-Add-Key-，SSH-KEY-配置成功，如下图所示："><a href="#12、-打开-GitHub-，依次点击-头像-–-gt-Settings–-gt-SSH-and-GPG-keys-–-gt-Add-SSH-key，将复制的密钥粘贴到-key-输入框，最后点击-Add-Key-，SSH-KEY-配置成功，如下图所示：" class="headerlink" title="12、 打开 GitHub ，依次点击 头像 –&gt;Settings–&gt;SSH and GPG keys –&gt; Add SSH key，将复制的密钥粘贴到 key 输入框，最后点击 Add Key ，SSH KEY 配置成功，如下图所示："></a>12、 打开 GitHub ，依次点击 <code>头像</code> –&gt;<code>Settings</code>–&gt;<code>SSH and GPG keys</code> –&gt; <code>Add SSH key</code>，将复制的密钥粘贴到 key 输入框，最后点击 Add Key ，SSH KEY 配置成功，如下图所示：</h3><p><img src="http://image.billiongrand.cn/blog/20181229/0kucpd5pUCE1.png" alt="mark"><br><img src="http://image.billiongrand.cn/blog/20181229/1dbfD4seVGvR.png" alt="mark"></p>
+<h3 id="13、修改-hexo-文件夹下的-config-yml-全局配置文件，修改-deploy-属性代码，将本地-hexo-项目托管到-GitHub-上，如下图所示：-鼠标右键选择-记事本打开-，-修改完后，-一定要另存为，编码选择-UTF-8-否则会出现乱码。"><a href="#13、修改-hexo-文件夹下的-config-yml-全局配置文件，修改-deploy-属性代码，将本地-hexo-项目托管到-GitHub-上，如下图所示：-鼠标右键选择-记事本打开-，-修改完后，-一定要另存为，编码选择-UTF-8-否则会出现乱码。" class="headerlink" title="13、修改 hexo 文件夹下的 _config.yml 全局配置文件，修改 deploy 属性代码，将本地 hexo 项目托管到 GitHub 上，如下图所示：  鼠标右键选择 记事本打开 ， 修改完后， 一定要另存为，编码选择 UTF-8 ,否则会出现乱码。"></a>13、修改 hexo 文件夹下的 _config.yml 全局配置文件，修改 deploy 属性代码，将本地 hexo 项目托管到 GitHub 上，如下图所示：  鼠标右键选择 <code>记事本打开</code> ， 修改完后， 一定要另存为，编码选择 <code>UTF-8</code> ,否则会出现乱码。</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line"> type: git <span class="comment">#部署的类型</span></span><br><span class="line"> repository: https://github.com/jaybinkoo/jaybinkoo.github.io.git <span class="comment"># 仓库地址</span></span><br><span class="line"> branch: master <span class="comment">#分支名称</span></span><br></pre></td></tr></table></figure>
+<p><img src="http://image.billiongrand.cn/blog/20181229/3bE0YLThcc7U.png" alt="mark"><br><img src="http://image.billiongrand.cn/blog/20181229/EVaDluoB1jIn.png" alt="mark"></p>
+<h3 id="14、新建一篇博客，行命令窗口输入：hexo-new-post-“博客名”-，然后-回车-例如-hexo-new-post-“你好，Hexo”"><a href="#14、新建一篇博客，行命令窗口输入：hexo-new-post-“博客名”-，然后-回车-例如-hexo-new-post-“你好，Hexo”" class="headerlink" title="14、新建一篇博客，行命令窗口输入：hexo new post “博客名” ，然后  回车.  例如  hexo new post “你好，Hexo”"></a>14、新建一篇博客，行命令窗口输入：<code>hexo new post “博客名”</code> ，然后  <code>回车</code>.  例如  <code>hexo new post “你好，Hexo”</code></h3><p><img src="http://image.billiongrand.cn/blog/20181229/Ls6rkeHFk6c1.png" alt="mark"></p>
+<h3 id="15、-在这个路径下-D-blog-hexo-source-posts-找到刚刚生产的-你好，Hexo-md-文件-鼠标右键，选择-用记事本-打开。输入-使用Hexo，-是非常简单的一件事-然后保存文件。点击-文件-gt-另存为-gt-所有文件-gt-UTF-8-gt-保存-gt-是"><a href="#15、-在这个路径下-D-blog-hexo-source-posts-找到刚刚生产的-你好，Hexo-md-文件-鼠标右键，选择-用记事本-打开。输入-使用Hexo，-是非常简单的一件事-然后保存文件。点击-文件-gt-另存为-gt-所有文件-gt-UTF-8-gt-保存-gt-是" class="headerlink" title="15、 在这个路径下 D:\blog\hexo\source\_posts  找到刚刚生产的 你好，Hexo.md 文件. 鼠标右键，选择 用记事本 打开。输入 使用Hexo， 是非常简单的一件事  然后保存文件。点击 文件 &gt; 另存为 &gt;  所有文件 &gt; UTF-8  &gt; 保存 &gt; 是"></a>15、 在这个路径下 <code>D:\blog\hexo\source\_posts</code>  找到刚刚生产的 <code>你好，Hexo.md</code> 文件. <code>鼠标右键</code>，选择 <code>用记事本</code> 打开。输入 <code>使用Hexo， 是非常简单的一件事</code>  然后保存文件。点击 <code>文件</code> &gt; <code>另存为</code> &gt;  <code>所有文件</code> &gt; <code>UTF-8</code>  &gt; <code>保存</code> &gt; <code>是</code></h3><p><img src="http://image.billiongrand.cn/blog/20181229/wjMtYgae2MOj.png" alt="mark"></p>
+<h3 id="16、在生成以及部署文章之前，需要安装一个-hexo-deployer-git-插件扩展："><a href="#16、在生成以及部署文章之前，需要安装一个-hexo-deployer-git-插件扩展：" class="headerlink" title="16、在生成以及部署文章之前，需要安装一个 hexo-deployer-git 插件扩展："></a>16、在生成以及部署文章之前，需要安装一个 hexo-deployer-git 插件扩展：</h3><p>输入 <code>npm install hexo-deployer-git --save</code>，然后 <code>回车</code> 。<br><img src="http://image.billiongrand.cn/blog/20181229/gc75UW2Xge33.png" alt="mark"></p>
+<h3 id="17、执行下面的代码命令：-hexo-d-g-，将-hexo-项目以及文章托管到-GitHub-上。"><a href="#17、执行下面的代码命令：-hexo-d-g-，将-hexo-项目以及文章托管到-GitHub-上。" class="headerlink" title="17、执行下面的代码命令： hexo d -g ，将 hexo 项目以及文章托管到 GitHub 上。"></a>17、执行下面的代码命令： <code>hexo d -g</code> ，将 hexo 项目以及文章托管到 GitHub 上。</h3><blockquote>
+<p>注：hexo generate 可缩写为 hexo g ， hexo deploy 可缩写为 hexo d</p>
+</blockquote>
+<p><img src="http://image.billiongrand.cn/blog/20181229/jSLE6SrW7Gyo.png" alt="mark"></p>
+<h3 id="18、部署成功后-打开浏览器，输入访问你的地址：http-用户名-github-io。那么将看到生成的文章"><a href="#18、部署成功后-打开浏览器，输入访问你的地址：http-用户名-github-io。那么将看到生成的文章" class="headerlink" title="18、部署成功后,打开浏览器，输入访问你的地址：http://用户名.github.io。那么将看到生成的文章"></a>18、部署成功后,打开浏览器，输入访问你的地址：http://用户名.github.io。那么将看到生成的文章</h3><p><code>[http://jaybinkoo.github.io](http://jaybinkoo.github.io)</code><br><img src="http://image.billiongrand.cn/blog/20181229/TuRumsmH9XCW.png" alt="mark"></p>
+<p>好了，到此为止，最基本的也是最全面的hexo+github搭建博客完成。<br>hexo 常用指令：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo g <span class="comment">#完整命令为hexo generate,用于生成静态文件</span></span><br><span class="line">hexo s <span class="comment">#完整命令为hexo server,用于启动服务器，主要用来本地预览</span></span><br><span class="line">hexo d <span class="comment">#完整命令为hexo deploy,用于将本地文件发布到github上</span></span><br><span class="line">hexo n <span class="comment">#完整命令为hexo new,用于新建一篇文章</span></span><br></pre></td></tr></table></figure>
+<h2 id="域名绑定"><a href="#域名绑定" class="headerlink" title="域名绑定"></a>域名绑定</h2><p>我的域名是：<code>https://jaybin.top/</code> .怎么来的呢？<br>我是看了这篇文章- <a href="http://www.makcyun.top/hexo01.html" target="_blank" rel="noopener">4块钱,用Github+Hexo搭建你的个人博客</a>才去绑定 <code>jaybinkoo.github.io</code> 这个域名的。对，没错，就是4块钱。</p>
+<h3 id="1、域名获取"><a href="#1、域名获取" class="headerlink" title="1、域名获取"></a>1、域名获取</h3><p>我是在 <a href="https://wanwang.aliyun.com/?spm=5176.8142029.digitalization.9.398c6d3eUEDmKA" target="_blank" rel="noopener">阿里云官网</a> 购买的。<br>要买域名，首先注册一个阿里云账号。<br><img src="http://image.billiongrand.cn/blog/20181229/WhsXPTUIEk4z.png" alt="mark"><br>注册完后，在搜索栏随意输入你喜欢的名字，然后搜索。如果你运气好，域名没有被别人注册，你就选那个吧。<br>如果被注册了，只能再改动你的名字了。不同的后缀价格不同。.com、.net 、.xin 会比较贵，便宜的后缀是：.top 、.xyz<br>我那时候买确实是 4元 （搞活动的时候），现在是 9元 了（其实也不贵）。 我买了 3年/67元。平均下来就是20多。后面再续费。</p>
+<h3 id="2、域名实名认证"><a href="#2、域名实名认证" class="headerlink" title="2、域名实名认证"></a>2、域名实名认证</h3><p>在天朝很多都要实名认证的，既然要你这样做，你就做吧。 当然有能力，你也可以到国外购买就不用认证了。<br>认证教程<a href="https://help.aliyun.com/knowledge_detail/41880.html" target="_blank" rel="noopener">点击这里</a> 或者百度一下 个人域名实名认证教程。</p>
+<h3 id="3、域名解析"><a href="#3、域名解析" class="headerlink" title="3、域名解析"></a>3、域名解析</h3><p><img src="http://image.billiongrand.cn/blog/20181229/DUG89p1dJY2u.png" alt="mark"><br>一般填写后，10分钟就可以解析完成了。<br><img src="http://image.billiongrand.cn/blog/20181229/jhpNigvX3xln.png" alt="mark"></p>
+<h3 id="4、配置CNAME文件"><a href="#4、配置CNAME文件" class="headerlink" title="4、配置CNAME文件"></a>4、配置CNAME文件</h3><p>在博客根目录文件夹下,例如在我的D:\blog\hexo\source 下，新建名为CNAME的记事本文件，然后去掉后缀 <code>.txt</code>。<br>鼠标右键，用记事本打开。在里面输入你的域名，例如我的：jaybin.top ，/然后，点击 <code>文件</code> &gt; <code>另存为</code>  &gt; <code>选择所有文件</code> &gt; <code>选择UTF-8</code> &gt; <code>保存</code>。</p>
+<blockquote>
+<p>注意：<br>这里填不填写www前缀都是可以的，区别在于填写www，那么博客网址就会以www开头，例如：我的博客网址是：<a href="http://www.jaybin.top，二者都可以，看你喜欢。" target="_blank" rel="noopener">www.jaybin.top，二者都可以，看你喜欢。</a></p>
+</blockquote>
+<h3 id="5、部署你的CNAME文件到GitHub上面。"><a href="#5、部署你的CNAME文件到GitHub上面。" class="headerlink" title="5、部署你的CNAME文件到GitHub上面。"></a>5、部署你的CNAME文件到GitHub上面。</h3><p>在命令窗口输入代码：  <code>hexo d -g</code>   ，再按 <code>回车</code>.   （如果它弹出窗口需要你填写 GitHub账户 和 密码，那你就填写，如果没有就不用。）</p>
+<h3 id="6、打开你的博客"><a href="#6、打开你的博客" class="headerlink" title="6、打开你的博客"></a>6、打开你的博客</h3><p>在浏览器输入你在记事本里的域名网址，即可打开你的博客。<br>至此，GitHub 绑定域名完成了。赶快把你的域名告诉你的朋友吧！</p>
+<h3 id="下一篇文章是教你如何定制自己专属的博客，装修得漂漂亮亮。"><a href="#下一篇文章是教你如何定制自己专属的博客，装修得漂漂亮亮。" class="headerlink" title="下一篇文章是教你如何定制自己专属的博客，装修得漂漂亮亮。"></a>下一篇文章是教你如何定制自己专属的博客，装修得漂漂亮亮。</h3>
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="爱好者 wechat" style="width: 200px; max-width: 100%;"/>
+    <div></div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果这篇文章对您帮助，打赏！就是对我最大肯定！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="爱好者 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="爱好者 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
+          
+            <a href="/tags/个人博客/" rel="tag"><i class="fa fa-tag"></i> 个人博客</a>
+          
+            <a href="/tags/github/" rel="tag"><i class="fa fa-tag"></i> github</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+              <div style="color: rgba(0, 0, 0, 0.75); font-size:13px; letter-spacing:3px">(&gt;看完记得五星好评哦亲&lt;)</div>
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/18/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/30/手把手教你打造个性超赞博客Hexo-GitHubPages-NexT的主题/" rel="prev" title="手把手教你打造个性超赞博客Hexo+GitHubPages+NexT的主题">
+                手把手教你打造个性超赞博客Hexo+GitHubPages+NexT的主题 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="http://image.billiongrand.cn/blog/20181215/8aC2VOCIHaSp.jpg"
+                alt="爱好者" />
+            
+              <p class="site-author-name" itemprop="name">爱好者</p>
+              <p class="site-description motion-element" itemprop="description">Stay Hungry,Stay Foolish</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/jaybinkoo" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:jaybin@aliyun.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+
+          
+    <div class="links-of-blogroll motion-element links-of-blogroll-block">
+      <div class="links-of-blogroll-title">
+        <!-- modify icon to fire by szw -->
+        <i class="fa fa-history fa-" aria-hidden="true"></i>
+        近期文章
+      </div>
+      <ul class="links-of-blogroll-list">
+        
+        
+          <li>
+            <a href="/2018/12/30/手把手教你打造个性超赞博客Hexo-GitHubPages-NexT的主题/" title="手把手教你打造个性超赞博客Hexo+GitHubPages+NexT的主题" target="_blank">手把手教你打造个性超赞博客Hexo+GitHubPages+NexT的主题</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/29/手把手教你用hexo在GitHub上搭建个人博客-域名绑定-超详细超多图/" title="手把手教你用hexo在GitHub上搭建个人博客+域名绑定(超详细超多图)" target="_blank">手把手教你用hexo在GitHub上搭建个人博客+域名绑定(超详细超多图)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/18/hello-world/" title="Hello World" target="_blank">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+
+
+
+ <!-- CloudCalendar -->
+          <div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+            <div class="widget" id="CloudCalendar"></div>
+          </div>
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是-Hexo"><span class="nav-number">1.</span> <span class="nav-text">什么是 Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是-GitHub"><span class="nav-number">2.</span> <span class="nav-text">什么是 GitHub</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一、查看win7是32还是64位"><span class="nav-number">3.</span> <span class="nav-text">一、查看win7是32还是64位?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、博客搭建的环境配置"><span class="nav-number">4.</span> <span class="nav-text">二、博客搭建的环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Git"><span class="nav-number">4.1.</span> <span class="nav-text">安装Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（1）官网下载：https-git-scm-com-download-win-选择好自己电脑的版本。我的是win7-32位"><span class="nav-number">4.2.</span> <span class="nav-text">（1）官网下载：https://git-scm.com/download/win   选择好自己电脑的版本。我的是win7-32位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（2）下载完成后，双击运行Git-2-20-1-32-bit-exe软件安装包"><span class="nav-number">4.3.</span> <span class="nav-text">（2）下载完成后，双击运行Git-2.20.1-32-bit.exe软件安装包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（3）一直点-Next，继续安装"><span class="nav-number">4.4.</span> <span class="nav-text">（3）一直点 Next，继续安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（4）点击-Install"><span class="nav-number">4.5.</span> <span class="nav-text">（4）点击 Install</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（5）去掉打钩，再点击finish-完成安装。"><span class="nav-number">4.6.</span> <span class="nav-text">（5）去掉打钩，再点击finish  完成安装。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（6）键盘按ctrl-r打开-命令窗口-输入-cmd-，点击确定-。"><span class="nav-number">4.7.</span> <span class="nav-text">（6）键盘按ctrl + r打开 命令窗口, 输入 cmd ，点击确定 。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（7）输入git-version，结果显示-Git-版本，安装成功。（这个命令窗口不用关掉，待会还要用）"><span class="nav-number">4.8.</span> <span class="nav-text">（7）输入git --version，结果显示 Git 版本，安装成功。（这个命令窗口不用关掉，待会还要用）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Node-js"><span class="nav-number">4.9.</span> <span class="nav-text">安装Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（1）官网下载：https-nodejs-org-en-download"><span class="nav-number">4.10.</span> <span class="nav-text">（1）官网下载：https://nodejs.org/en/download/</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（2）下载完成后，双击运行-node-v8-11-3-x86-msi-软件安装包"><span class="nav-number">4.11.</span> <span class="nav-text">（2）下载完成后，双击运行 node-v8.11.3-x86.msi 软件安装包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（3）打钩，接受，再点击-Next"><span class="nav-number">4.12.</span> <span class="nav-text">（3）打钩，接受，再点击 Next ,</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（4）一直Next"><span class="nav-number">4.13.</span> <span class="nav-text">（4）一直Next</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（5）点击-install"><span class="nav-number">4.14.</span> <span class="nav-text">（5）点击 install</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（6）-点击-Finsh-，完成安装。"><span class="nav-number">4.15.</span> <span class="nav-text">（6） 点击 Finsh ，完成安装。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（7）打开刚才的命令窗口，输入-node-v-然后按-回车-。-再输入-npm-v-再按-回车"><span class="nav-number">4.16.</span> <span class="nav-text">（7）打开刚才的命令窗口，输入 node -v ,  然后按 回车 。 再输入 npm -v ,再按 回车</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#至此，软件安装步骤完成。"><span class="nav-number">4.17.</span> <span class="nav-text">至此，软件安装步骤完成。</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、搭建-Hexo-博客框架"><span class="nav-number">5.</span> <span class="nav-text">三、搭建 Hexo 博客框架</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#（1）-安装-Hexo，"><span class="nav-number">5.1.</span> <span class="nav-text">（1） 安装 Hexo，</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（2）输入命令：npm-install-g-hexo-cli-，按-回车-。"><span class="nav-number">5.2.</span> <span class="nav-text">（2）输入命令：npm install -g hexo-cli ，按 回车 。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（3）初始化-Hexo"><span class="nav-number">5.3.</span> <span class="nav-text">（3）初始化 Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#（4）在Git-Bash-这个窗口继续执行以下代码：（无特别提示，以下代码基本都在-Git-Bash-命令窗口执行）"><span class="nav-number">5.4.</span> <span class="nav-text">（4）在Git Bash 这个窗口继续执行以下代码：（无特别提示，以下代码基本都在 Git Bash 命令窗口执行）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#把你的博客部署到Github-Pages上去"><span class="nav-number">6.</span> <span class="nav-text">把你的博客部署到Github Pages上去</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、Github账号注册及配置"><span class="nav-number">6.1.</span> <span class="nav-text">1、Github账号注册及配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、新建一个仓库，仓库名为：jaybinkoo-github-io-，如下图所示"><span class="nav-number">6.2.</span> <span class="nav-text">2、新建一个仓库，仓库名为：jaybinkoo.github.io ，如下图所示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、只需填写-username-github-io-即可，然后点击-create-repositrory。-注意：username-github-io-的-username-要和-用户名-保持一致，不然后面会失败。以我的为例："><span class="nav-number">6.3.</span> <span class="nav-text">3、只需填写 username.github.io 即可，然后点击 create repositrory。 注意：username.github.io  的 username 要和 用户名 保持一致，不然后面会失败。以我的为例：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、点击github主页右上角的-your-profile"><span class="nav-number">6.4.</span> <span class="nav-text">4、点击github主页右上角的 your profile</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5、找到新建立的-username-github-io-文件-点击打开，"><span class="nav-number">6.5.</span> <span class="nav-text">5、找到新建立的 username.github.io 文件,点击打开，</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6、点击-settings，"><span class="nav-number">6.6.</span> <span class="nav-text">6、点击 settings，</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7、往下拉动鼠标到GitHub-Pages。"><span class="nav-number">6.7.</span> <span class="nav-text">7、往下拉动鼠标到GitHub Pages。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8、将Hexo与Github-page联系起来，设置Git的user-name和email（如果是第一次的话）"><span class="nav-number">6.8.</span> <span class="nav-text">8、将Hexo与Github page联系起来，设置Git的user name和email（如果是第一次的话）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9、-生成-SSH-KEY，其实就是生成一个公钥和密钥，因为-GitHub-需要一个密钥才能与本地相连接。执行以下命令，并-连续按-3-次回车"><span class="nav-number">6.9.</span> <span class="nav-text">9、 生成 SSH KEY，其实就是生成一个公钥和密钥，因为 GitHub 需要一个密钥才能与本地相连接。执行以下命令，并 连续按 3 次回车</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10、-SSH-KEY-生成之后-得到了两个文件：id-rsa-和-id-rsa-pub（默认存储路径是：C-Users-Administrator-ssh）。打开我的电脑，在地址栏输入-C-Users-Administrator-ssh-然后回车，即可打开这个目录-。"><span class="nav-number">6.10.</span> <span class="nav-text">10、 SSH KEY 生成之后,得到了两个文件：id_rsa 和 id_rsa.pub（默认存储路径是：C:\Users\Administrator.ssh）。打开我的电脑，在地址栏输入 C:\Users\Administrator\.ssh ,然后回车，即可打开这个目录 。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11、鼠标右键选择用记事本打开-id-rsa-pub-文件，复制全部内容，即复制密钥。"><span class="nav-number">6.11.</span> <span class="nav-text">11、鼠标右键选择用记事本打开  id_rsa.pub  文件，复制全部内容，即复制密钥。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12、-打开-GitHub-，依次点击-头像-–-gt-Settings–-gt-SSH-and-GPG-keys-–-gt-Add-SSH-key，将复制的密钥粘贴到-key-输入框，最后点击-Add-Key-，SSH-KEY-配置成功，如下图所示："><span class="nav-number">6.12.</span> <span class="nav-text">12、 打开 GitHub ，依次点击 头像 –&gt;Settings–&gt;SSH and GPG keys –&gt; Add SSH key，将复制的密钥粘贴到 key 输入框，最后点击 Add Key ，SSH KEY 配置成功，如下图所示：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13、修改-hexo-文件夹下的-config-yml-全局配置文件，修改-deploy-属性代码，将本地-hexo-项目托管到-GitHub-上，如下图所示：-鼠标右键选择-记事本打开-，-修改完后，-一定要另存为，编码选择-UTF-8-否则会出现乱码。"><span class="nav-number">6.13.</span> <span class="nav-text">13、修改 hexo 文件夹下的 _config.yml 全局配置文件，修改 deploy 属性代码，将本地 hexo 项目托管到 GitHub 上，如下图所示：  鼠标右键选择 记事本打开 ， 修改完后， 一定要另存为，编码选择 UTF-8 ,否则会出现乱码。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#14、新建一篇博客，行命令窗口输入：hexo-new-post-“博客名”-，然后-回车-例如-hexo-new-post-“你好，Hexo”"><span class="nav-number">6.14.</span> <span class="nav-text">14、新建一篇博客，行命令窗口输入：hexo new post “博客名” ，然后  回车.  例如  hexo new post “你好，Hexo”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15、-在这个路径下-D-blog-hexo-source-posts-找到刚刚生产的-你好，Hexo-md-文件-鼠标右键，选择-用记事本-打开。输入-使用Hexo，-是非常简单的一件事-然后保存文件。点击-文件-gt-另存为-gt-所有文件-gt-UTF-8-gt-保存-gt-是"><span class="nav-number">6.15.</span> <span class="nav-text">15、 在这个路径下 D:\blog\hexo\source\_posts  找到刚刚生产的 你好，Hexo.md 文件. 鼠标右键，选择 用记事本 打开。输入 使用Hexo， 是非常简单的一件事  然后保存文件。点击 文件 &gt; 另存为 &gt;  所有文件 &gt; UTF-8  &gt; 保存 &gt; 是</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#16、在生成以及部署文章之前，需要安装一个-hexo-deployer-git-插件扩展："><span class="nav-number">6.16.</span> <span class="nav-text">16、在生成以及部署文章之前，需要安装一个 hexo-deployer-git 插件扩展：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#17、执行下面的代码命令：-hexo-d-g-，将-hexo-项目以及文章托管到-GitHub-上。"><span class="nav-number">6.17.</span> <span class="nav-text">17、执行下面的代码命令： hexo d -g ，将 hexo 项目以及文章托管到 GitHub 上。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#18、部署成功后-打开浏览器，输入访问你的地址：http-用户名-github-io。那么将看到生成的文章"><span class="nav-number">6.18.</span> <span class="nav-text">18、部署成功后,打开浏览器，输入访问你的地址：http://用户名.github.io。那么将看到生成的文章</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#域名绑定"><span class="nav-number">7.</span> <span class="nav-text">域名绑定</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、域名获取"><span class="nav-number">7.1.</span> <span class="nav-text">1、域名获取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、域名实名认证"><span class="nav-number">7.2.</span> <span class="nav-text">2、域名实名认证</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、域名解析"><span class="nav-number">7.3.</span> <span class="nav-text">3、域名解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、配置CNAME文件"><span class="nav-number">7.4.</span> <span class="nav-text">4、配置CNAME文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5、部署你的CNAME文件到GitHub上面。"><span class="nav-number">7.5.</span> <span class="nav-text">5、部署你的CNAME文件到GitHub上面。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6、打开你的博客"><span class="nav-number">7.6.</span> <span class="nav-text">6、打开你的博客</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下一篇文章是教你如何定制自己专属的博客，装修得漂漂亮亮。"><span class="nav-number">7.7.</span> <span class="nav-text">下一篇文章是教你如何定制自己专属的博客，装修得漂漂亮亮。</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        ﻿<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<span id="busuanzi_container_site_uv">
+  访客数:<span id="busuanzi_value_site_uv"></span>人次
+</span>
+
+
+  <!--<div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>-->
+
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+
+
+
+<span id="busuanzi_container_site_pv">
+   总访问量:<span id="busuanzi_value_site_pv"></span>次
+</span>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共7.8k字</span>
+</div>
+
+
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="heart">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">爱好者</span>
+
+  
+</div>
+
+
+  <!--<div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>-->
+
+
+
+  <!--<span class="post-meta-divider">|</span>-->
+
+
+
+  <!--<div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>-->
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '0jIPAHSJOq8dN1q3yio6f5PO-gzGzoHsz',
+        appKey: 'RCiQJHokHwY0L6MlmcTDqRbk',
+        placeholder: '欢迎留言！在这里说出的想法！',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("0jIPAHSJOq8dN1q3yio6f5PO-gzGzoHsz", "RCiQJHokHwY0L6MlmcTDqRbk");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+  <script type="text/javascript">
+  wpac_init = window.wpac_init || [];
+  wpac_init.push({widget: 'Rating', id: 15599,
+    el: 'wpac-rating',
+    color: 'f79533'
+  });
+  (function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = '//embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+  })();
+  </script>
+
+
+  
+
+  
+
+  
+
+  <!-- calendar widget -->
+
+
+    <script src="/lib/CloudCalendar/CloudCalendar.js"></script>
+    <script src="/lib/CloudCalendar/languages.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN', 
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
+
+
+
+  <!--崩溃欺骗-->
+<script type="text/javascript" src="/js/src/hone_hone_clock.js"></script>
+  <!-- 代码块复制功能 -->
+<script type="text/javascript" src="/js/src/clipboard.min.js"></script>  
+<script type="text/javascript" src="/js/src/clipboard-use.js"></script>
+
+</body>
+</html>

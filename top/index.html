@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="Copyright © 2018 Priest Tomb              Powered by Jekyll      &amp;nbsp;|&amp;nbsp;                          &amp;nbsp;|&amp;nbsp;">
+<meta name="description" content="AV.initialize(&quot;0jIPAHSJOq8dN1q3yio6f5PO-gzGzoHsz&quot;, &quot;RCiQJHokHwY0L6MlmcTDqRbk&quot;);    var time=0   var title=&quot;&quot;   var url=&quot;&quot;   var query = new AV.Query(&apos;Counter&apos;);   query.notEqualTo(&apos;id&apos;,0);   query.d">
 <meta name="keywords" content="python,hexo,神器,软件">
 <meta property="og:type" content="website">
 <meta property="og:title" content="最受欢迎的文章">
 <meta property="og:url" content="https://www.jaybin.top/top/index.html">
 <meta property="og:site_name" content="python爱好者">
-<meta property="og:description" content="Copyright © 2018 Priest Tomb              Powered by Jekyll      &amp;nbsp;|&amp;nbsp;                          &amp;nbsp;|&amp;nbsp;">
+<meta property="og:description" content="AV.initialize(&quot;0jIPAHSJOq8dN1q3yio6f5PO-gzGzoHsz&quot;, &quot;RCiQJHokHwY0L6MlmcTDqRbk&quot;);    var time=0   var title=&quot;&quot;   var url=&quot;&quot;   var query = new AV.Query(&apos;Counter&apos;);   query.notEqualTo(&apos;id&apos;,0);   query.d">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-30T07:41:28.000Z">
+<meta property="og:updated_time" content="2018-12-30T07:56:46.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="最受欢迎的文章">
-<meta name="twitter:description" content="Copyright © 2018 Priest Tomb              Powered by Jekyll      &amp;nbsp;|&amp;nbsp;                          &amp;nbsp;|&amp;nbsp;">
+<meta name="twitter:description" content="AV.initialize(&quot;0jIPAHSJOq8dN1q3yio6f5PO-gzGzoHsz&quot;, &quot;RCiQJHokHwY0L6MlmcTDqRbk&quot;);    var time=0   var title=&quot;&quot;   var url=&quot;&quot;   var query = new AV.Query(&apos;Counter&apos;);   query.notEqualTo(&apos;id&apos;,0);   query.d">
 
 
 
@@ -333,8 +333,31 @@
       <div class="post-body">
         
         
-          
-<footer class="site-footer"><br>  <div class="footer-div"><br>    <div class="copyright"><br>      Copyright © 2018 Priest Tomb<br>    </div><br>    <div><br>      Powered by <a href="https://github.com/jekyll" target="_blank" rel="noopener">Jekyll</a><br>      &nbsp;|&nbsp;<br>      <a href="https://github.com/PriestTomb" style="color:black;" target="_blank" rel="noopener"><br>        <i class="fa fa-github" aria-hidden="true"></i><br>      </a><br>      &nbsp;|&nbsp;<br>      <!-- <iframe style="margin-bottom:-5px;margin-left:5px;" src="https://ghbtns.com/github-btn.html?user=priesttomb&repo=priesttomb.github.io&type=star&count=true" frameborder="0" scrolling="0" width="90px" height="20px"></iframe> --><br>      <!-- 2017-12-14 加入站长统计 --><br>      <span id="cnzz_stat_icon_1267535490"></span><br>      <script src="https://s13.cnzz.com/z_stat.php?id=1267535490&show=pic" type="text/javascript"></script><br>    </div><br>  <div><br></div></div></footer>
+          <p><div id="top"></div></p>
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+<script>AV.initialize("0jIPAHSJOq8dN1q3yio6f5PO-gzGzoHsz", "RCiQJHokHwY0L6MlmcTDqRbk");</script>
+<script type="text/javascript">
+  var time=0
+  var title=""
+  var url=""
+  var query = new AV.Query('Counter');
+  query.notEqualTo('id',0);
+  query.descending('time');
+  query.limit(1000);
+  query.find().then(function (todo) {
+    for (var i=0;i<1000;i++){
+      var result=todo[i].attributes;
+      time=result.time;
+      title=result.title;
+      url=result.url;
+      // var content="<a href='"+"https://jaybinkoo.github.io"+url+"'>"+title+"</a>"+"<br>"+"<font color='#fff'>"+"阅读次数："+time+"</font>"+"<br><br>";
+      var content="<p>"+"<font color='#1C1C1C'>"+"【文章热度:"+time+"℃】"+"</font>"+"<a href='"+"https://hoxis.github.io"+url+"'>"+title+"</a>"+"</p>";
+      document.getElementById("top").innerHTML+=content
+    }
+  }, function (error) {
+    console.log("error");
+  });
+</script>
         
       </div>
       

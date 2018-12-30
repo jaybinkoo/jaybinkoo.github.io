@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="python爱好者">
 <meta property="og:description" content="博客文章阅读量排行榜">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-30T12:10:33.000Z">
+<meta property="og:updated_time" content="2018-12-30T12:13:19.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="最受欢迎的文章">
 <meta name="twitter:description" content="博客文章阅读量排行榜">
@@ -354,7 +354,7 @@
       time=result.time;
       title=result.title;
       url=result.url;
-      var content="<a href='"+"https://jaybinkoo.github.io"+url+"'>"+title+"</a>"+"<br />"+"<font color='#5073b8'>"+"阅读次数："+time+"</font>"+"<br /><br />";
+      var content="<p>"+"<font color='#1C1C1C'>"+"【文章热度:"+time+"℃】"+"</font>"+"<a href='"+"https://hoxis.github.io"+url+"'>"+title+"</a>"+"</p>";
       document.getElementById("top").innerHTML+=content
     }
   }, function (error) {
